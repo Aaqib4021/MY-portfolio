@@ -107,7 +107,8 @@ const Footer = () => {
               onClick={async (e) => {
                 e.preventDefault();
                 try {
-                  await axios.post("http://localhost:4001/", {
+                  console.log(process.env.REACT_APP_BASE_URL);
+                  await axios.post(process.env.REACT_APP_BASE_URL, {
                     name,
                     email,
                     message,
