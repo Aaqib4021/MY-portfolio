@@ -62,7 +62,7 @@ const MyWork = () => {
               <div className=" font-medium mb-1">
                 Youtube Clone - Go where you feel entertained
               </div>
-              <time className="text-xs font-medium">Sept 2024</time>
+              <time className="text-xs font-medium">Aug 2024</time>
               <p className="text-sm text-gray-400 mt-2 mb-4">
                 A YouTube clone project featuring multiple routes like Home,
                 Results, and Watch pages. It includes real-time search
@@ -108,7 +108,7 @@ const MyWork = () => {
               <div className=" font-medium mb-1">
                 Netflix Clone - Your go to streaming partner
               </div>
-              <time className="text-xs font-medium">Sept 2024</time>
+              <time className="text-xs font-medium">June 2024</time>
               <p className="text-sm text-gray-400 mt-2 mb-4">
                 A Netflix clone project that includes sign-up and sign-in pages
                 with validation, Firebase authentication, a language change
@@ -154,7 +154,7 @@ const MyWork = () => {
               <div className=" font-medium mb-1">
                 Age Calculator - Calculate its never to late
               </div>
-              <time className="text-xs font-medium">Sept 2024</time>
+              <time className="text-xs font-medium">June 2024</time>
               <p className="text-sm text-gray-400 mt-2 mb-4">
                 A project that allows users to calculate their age based on
                 their date of birth. The application provides a user-friendly
@@ -203,7 +203,7 @@ const MyWork = () => {
               <div className=" font-medium mb-1">
                 News app - Stay updated its important
               </div>
-              <time className="text-xs font-medium">Sept 2024</time>
+              <time className="text-xs font-medium">July 2024</time>
               <p className="text-sm text-gray-400 mt-2 mb-4">
                 A news app featuring a search functionality that allows users to
                 find specific news articles. The app also displays news based on
