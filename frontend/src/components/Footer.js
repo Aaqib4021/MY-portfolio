@@ -107,11 +107,8 @@ const Footer = () => {
               onClick={async (e) => {
                 e.preventDefault();
                 try {
-                  console.log(process.env.REACT_APP_BASE_URL);
                   await axios.get(process.env.REACT_APP_BASE_URL, {
-                    name,
-                    email,
-                    message,
+                    headers: { name, email, message },
                   });
                   alert("Message sent");
                   setName("");

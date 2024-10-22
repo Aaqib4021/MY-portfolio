@@ -18,7 +18,7 @@ const transporter = nodemailer.createTransport({
 });
 
 app.get("/", (req, res) => {
-  const { name, email, message } = req.body;
+  const { name, email, message } = req.headers;
   const mailOptions = {
     from: "aaqibb710@gmail.com",
     to: "aaqibb710@gmail.com",
@@ -27,23 +27,17 @@ app.get("/", (req, res) => {
     replyTo: email,
   };
 
-  try {
-    transporter.sendMail(mailOptions, function (err, info) {
-      if (err) {
-        res.json({
-          message: err,
-        });
-      } else {
-        res.json({
-          message: "Email sent",
-        });
-      }
-    });
-  } catch (err) {
-    res.json({
-      message: err,
-    });
-  }
+  transporter.sendMail(mailOptions, function (err, info) {
+    if (err) {
+      res.json({
+        message: err,
+      });
+    } else {
+      res.json({
+        message: "Email sent",
+      });
+    }
+  });
 });
 const PORT = process.env.PORT;
 app.listen(PORT);
