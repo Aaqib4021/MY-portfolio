@@ -2,7 +2,7 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
 const app = express();
-
+require("dotenv").config();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -13,7 +13,7 @@ const transporter = nodemailer.createTransport({
   secure: true,
   auth: {
     user: "aaqibb710@gmail.com",
-    pass: process.env.Password,
+    pass: process.env.PASSWORD,
   },
 });
 
@@ -45,5 +45,5 @@ app.post("/", (req, res) => {
     });
   }
 });
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT;
 app.listen(PORT);
