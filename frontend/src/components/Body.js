@@ -16,7 +16,7 @@ const Body = () => {
         <div className="links-wrapper border border-gray-500  w-[370px] px-3 py-3 rounded-full flex gap-8 items-center justify-center bg-white/5 backdrop-blur-lg hover:scale-105 transition-transform duration-500 ">
           <div className="rounded-md px-1 py-1 hover:scale-150 hover:bg-black transition-transform duration-300 ">
             {" "}
-            <a href="http://localhost:3000/">
+            <a href="#">
               <span>
                 <IoHomeOutline />
               </span>
