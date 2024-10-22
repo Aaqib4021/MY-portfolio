@@ -2,7 +2,6 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
 const app = express();
-const { Password } = require("./config");
 
 app.use(cors());
 app.use(express.json());
@@ -14,7 +13,7 @@ const transporter = nodemailer.createTransport({
   secure: true,
   auth: {
     user: "aaqibb710@gmail.com",
-    pass: Password,
+    pass: process.env.Password,
   },
 });
 
@@ -46,5 +45,5 @@ app.post("/", (req, res) => {
     });
   }
 });
-
-app.listen(4000);
+const PORT = process.env.PORT || 4000;
+app.listen(PORT);
