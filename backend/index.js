@@ -2,6 +2,7 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
 const app = express();
+const { Password } = require("./config");
 
 app.use(cors());
 app.use(express.json());
@@ -13,7 +14,7 @@ const transporter = nodemailer.createTransport({
   secure: true,
   auth: {
     user: "aaqibb710@gmail.com",
-    pass: "jvut sofs webx igou",
+    pass: Password,
   },
 });
 
