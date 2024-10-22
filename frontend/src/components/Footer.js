@@ -108,7 +108,7 @@ const Footer = () => {
                 e.preventDefault();
                 try {
                   console.log(process.env.REACT_APP_BASE_URL);
-                  await axios.post(process.env.REACT_APP_BASE_URL, {
+                  await axios.get(process.env.REACT_APP_BASE_URL, {
                     name,
                     email,
                     message,
