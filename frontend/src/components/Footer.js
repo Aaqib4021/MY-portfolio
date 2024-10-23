@@ -7,7 +7,7 @@ const Footer = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   return (
-    <div className="text-center mb-12">
+    <div className="text-center mb-20">
       <h1 className="text-2xl font-bold mb-2">Let's Connect</h1>
       <p className="text-sm font-medium text-gray-400">
         I'm excited to connect with others via email (aqibnengroo5@gmail.com)

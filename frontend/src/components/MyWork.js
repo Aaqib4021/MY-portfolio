@@ -10,7 +10,7 @@ const style =
 
 const MyWork = () => {
   return (
-    <div className="mb-20 mt-10 ">
+    <div className="mb-12 mt-10 ">
       <div className="main-div flex flex-col ">
         <div className="head-div text-center mb-10">
           <h1 className="text-2xl font-bold mb-2">Check out my work</h1>

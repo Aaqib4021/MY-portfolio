@@ -26,7 +26,7 @@ const Information = () => {
           <span>Backend Developer</span>
         </div>
         <p className="Description max-w-[500px] text-gray-500 font-medium mb-2 text-xs sm:text-sm ">
-          Full Stack Developer specializing in JavaScript, React, and Next.js.
+          Full Stack Developer specializing in JavaScript, React, and Node.js.
           Experienced in frontend and backend, focused on creating efficient,
           responsive web applications. Passionate about emerging tech and
           tackling complex challenges in web development.

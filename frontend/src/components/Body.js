@@ -23,7 +23,7 @@ const Body = () => {
             </a>
           </div>
           <div className="rounded-md px-1 py-1 hover:scale-150 hover:bg-black transition-transform duration-300 ">
-            <a href="https://google.com">
+            <a href="#">
               <span>
                 <FaPen />
               </span>
